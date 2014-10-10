@@ -68,13 +68,13 @@ foreach($_POST as $key => $value) {
 }
 
 $password='';
-if($_POST['numberOfWords']<=$maxSize && $_POST['numberOfWords']>$minSize)
+if($_POST['numberOfUsers']<=$maxSize && $_POST['numberOfUsers']>$minSize)
 {
-    for($i=0; $i<$_POST['numberOfWords']; $i++)
+    for($i=0; $i<$_POST['numberOfUsers']; $i++)
     {
         $arrayIndex=array_rand($password_word_options);
         $password.=$password_word_options[$arrayIndex];
-        if($i != $_POST['numberOfWords']-1)
+        if($i != $_POST['numberOfUsers']-1)
         {
             if($_POST['separatorOptions']=='spaces')
             {
