@@ -56,7 +56,7 @@
 
 <div id="bottom">
 
-    <img src="{{asset('images/Users.PNG')}}" alt="Users graphic" />
+    <img src="{{HTML::image('/images/Users.png')}}" alt="Users image" />
 </div>
 </body>
 </html>
