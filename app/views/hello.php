@@ -6,7 +6,6 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/index.css" type="text/css">
-
 </head>
 <body>
 <h1>
