@@ -1,0 +1,75 @@
+h1{
+    font-size: 3em;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin: 1.4em;
+    color:mediumpurple;
+}
+
+h2{
+    font-size: 1.7em;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin: 1.2em;
+    color:saddlebrown;
+}
+
+.sideColumns {
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+input{
+    margin:.5em;
+}
+
+form{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin:.5em;
+    margin-top:2em;
+}
+
+ol li {
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    margin:.5em;
+    margin-top:1.2em;
+    color:darkslategrey;
+}
+
+img{
+    margin-top: 2em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: .5em;
+
+}
+
+.radioHeaders{
+    font-size:1em;
+    color: green;
+}
+
+#passwordOutput{
+    font-size: 2em;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin: 1.2em;
+    color:teal;
+    background-color:navajowhite;
+}
+
+#bottom{
+    background-color:darkslategray;
+    padding:1em;
+}
+
+p{
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    margin:.5em;
+    margin-top:1.2em;
+    color:blue;
+}
