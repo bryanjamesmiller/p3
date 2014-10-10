@@ -30,7 +30,7 @@
         <input type='submit' value='Generate Text' id="generateTextButton"><br>
     </form>
     <p>Here are your paragraphs:</p>
-    <div id="paragraphsOutput"><?php echo $paragraphs; ?></div>
+    <div class="outputs"><?php echo $paragraphs; ?></div>
 
     <h2>
         Random User Generator:
@@ -52,11 +52,11 @@
     </form>
 
     <p>Here are your Users:</p>
-    <div id="usersOutput"><?php echo $users; ?></div>
+    <div class="outputs"><?php echo $users; ?></div>
 </div>
 
 <div id="bottom">
-    <img src="images/passphrase-cartoon.PNG" alt="Cartoon from lecture" />
+    <img src="images/Users.png" alt="Cartoon from lecture" />
 </div>
 </body>
 </html>
