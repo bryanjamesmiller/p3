@@ -14,11 +14,6 @@ h2{
     color:saddlebrown;
 }
 
-.sideColumns {
-    margin-right: 15%;
-    margin-left: 15%;
-}
-
 input{
     margin:.5em;
 }
@@ -55,6 +50,8 @@ img{
     font-family: 'Varela Round', sans-serif;
     text-align: center;
     margin: 1.2em;
+    color:white;
+    background-color:black;
 }
 
 #bottom{

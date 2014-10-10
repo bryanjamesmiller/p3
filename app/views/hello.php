@@ -6,7 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <?php require 'logic.php'; ?>
+
 </head>
 <body>
 <h1>
@@ -30,7 +30,6 @@
         <input type='submit' value='Generate Text' id="generateTextButton"><br>
     </form>
     <p>Here are your paragraphs:</p>
-    <div class="outputs"><?php echo $paragraphs; ?></div>
 
     <h2>
         Random User Generator:
@@ -52,7 +51,7 @@
     </form>
 
     <p>Here are your Users:</p>
-    <div class="outputs"><?php echo $users; ?></div>
+
 </div>
 
 <div id="bottom">
