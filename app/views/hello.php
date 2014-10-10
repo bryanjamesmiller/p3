@@ -55,8 +55,8 @@
 </div>
 
 <div id="bottom">
-    {{HTML::image('/images/Users.png')}}
-    <img src="images/Users.png" alt="Cartoon from lecture" />
+
+    <img src="{{HTML::image('/images/Users.png')}}" alt="Cartoon from lecture" />
 </div>
 </body>
 </html>
