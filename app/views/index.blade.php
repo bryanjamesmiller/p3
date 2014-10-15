@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>
-    A Developer's Best Friend!
+    A Developer's Wonderful Friend!
 </h1>
 <h2>
     Lorem Ipsum Generator:
@@ -56,7 +56,7 @@
 
 <div id="bottom">
 
-    <img src="{{HTML::image('/images/Users.png')}}" alt="Users image" />
+    <img src={{URL::asset('/images/Users.png')}} alt='Users image' />
 </div>
 </body>
 </html>
