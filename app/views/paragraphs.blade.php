@@ -23,6 +23,6 @@ Generate Paragraphs
         <input type="text" name="numberOfParagraphs"><br>
         <input type='submit' value='Generate Text' id="generateTextButton"><br>
     </form>
-    <p>Here are your paragraphs:</p>
-    </div>
+    <div class="middle"><p>Here are your paragraphs:</p></div>
+</div>
 @stop

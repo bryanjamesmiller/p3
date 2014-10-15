@@ -5,7 +5,7 @@
     <title>@yield('title','Foobooks')</title>
     <meta charset='utf-8'>
 
-    <link rel='stylesheet' href='foobooks.css' type='text/css'>
+    <link rel='stylesheet' href='css/index.css' type='text/css'>
 
     @yield('head')
 

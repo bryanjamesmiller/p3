@@ -5,7 +5,9 @@ Generate Users
 @stop
 
 @section('content')
-<h1>Random User Generator</h1>
+<div id="top">
+    <h1>Random User Generator</h1>
+</div>
 @stop
 
 @section('body')
@@ -18,19 +20,18 @@ Generate Users
     </li>
 </ol>
 <form>// method='POST' action='index.php'>
-    <p class="inputHeaders"> How many paragraphs would you like? (Maximum: 99)</p>
+    <p class="middle"> How many users would you like? (Maximum: 99)</p>
     <input type="text" name="numberOfUsers"><br>
     <input type="checkbox" name="birthday" value="true" id="birthday"><label for="birthday">Would you like to include a birthday?</label><br>
     <input type="checkbox" name="profile" value="true" id="profile"><label for="profile">Would you like to include a profile?</label><br>
     <input type='submit' value='Generate Users' id="generateUsersButton"><br>
 </form>
 
-<p>Here are your Users:</p>
+<p class="middle">Here are your Users:</p>
 
 </div>
 
 <div id="bottom">
-
     <img src='{{URL::asset('/images/Users.png')}}' alt='Users image' />
 </div>
 @stop

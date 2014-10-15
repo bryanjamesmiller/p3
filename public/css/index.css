@@ -3,7 +3,7 @@ h1{
     font-family: 'Varela Round', sans-serif;
     text-align: center;
     margin: 1.4em;
-    color:mediumpurple;
+    color:lightblue;
 }
 
 h2{
@@ -11,7 +11,7 @@ h2{
     font-family: 'Varela Round', sans-serif;
     text-align: center;
     margin: 1.2em;
-    color:saddlebrown;
+    color:lightblue;
 }
 
 input{
@@ -42,7 +42,7 @@ img{
 
 .inputHeaders{
     font-size:1em;
-    color: saddlebrown;
+    color: lightblue;
 }
 
 .outputs{
@@ -52,6 +52,16 @@ img{
     margin: 1.2em;
     color:white;
     background-color:black;
+}
+
+#top{
+    background-color:black;
+    padding:1em;
+}
+
+.middle{
+    background-color:black;
+    padding:.7em;
 }
 
 #bottom{
@@ -64,5 +74,5 @@ p{
     font-family: 'Montserrat', sans-serif;
     margin:.5em;
     margin-top:1.2em;
-    color:mediumpurple;
+    color:lightblue;
 }
