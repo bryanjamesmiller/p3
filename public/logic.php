@@ -1,65 +1,7 @@
 <?php
-$password_word_options = Array(
-    'Maple',
-    'Purple',
-    'Spurs',
-    'Prince',
-    'Coconut',
-    'Jamaica',
-    'Disney',
-    'Seal',
-    'Hunchback',
-    'Cactus',
-    'Chess',
-    'Soccer',
-    'Baby',
-    'Dog',
-    'Porcupine',
-    'Checkers',
-    'Cheese',
-    'Swiss',
-    'German',
-    'French',
-    'Banana',
-    'Fire',
-    'Water',
-    'Blue',
-    'Duck',
-    'Cup',
-    'Frisbee',
-    'Gators',
-    'Moo',
-    'Oatmeal',
-    'Tigers',
-    'Quack'
-);
 
-$password_symbol_options = Array(
-    '!',
-    '@',
-    '#',
-    '$',
-    '%',
-    '^',
-    '&',
-    '*'
-);
-
-$password_number_options = Array(
-    '0',
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9'
-);
-
-//Sets the max possible number of words to include in one's password
-$maxSize=9;
+//Sets the max possible number of users and paragraphs one can generate
+$maxSize=99;
 $minSize=0;
 
 //Initialize the $_POST array
@@ -67,14 +9,15 @@ foreach($_POST as $key => $value) {
     $key='';
 }
 
-$password='';
-if($_POST['numberOfUsers']<=$maxSize && $_POST['numberOfUsers']>$minSize)
+$paragraphs='';
+
+if($_POST['numberOfParagraphs']<=$maxSize && $_POST['numberOfParagraphs']>$minSize)
 {
-    for($i=0; $i<$_POST['numberOfUsers']; $i++)
+    for($i=0; $i<$_POST['numberOfParagraphs']; $i++)
     {
         $arrayIndex=array_rand($password_word_options);
         $password.=$password_word_options[$arrayIndex];
-        if($i != $_POST['numberOfUsers']-1)
+        if($i != $_POST['numberOfWords']-1)
         {
             if($_POST['separatorOptions']=='spaces')
             {
