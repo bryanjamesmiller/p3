@@ -13,7 +13,7 @@
     A Developer's Wonderful Friend!
 </h1>
 <h2>
-    Lorem Ipsum Generator:
+    Placeholder Text Paragraph Generator:
 </h2>
 <div class="sideColumns">
     <ol>
