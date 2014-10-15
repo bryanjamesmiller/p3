@@ -32,6 +32,7 @@ Generate Users
 </div>
 
 <div id="bottom">
+    <img src="images/wheat logo.PNG" alt="wheat logo">
     <img src='{{URL::asset('/images/Users.png')}}' alt='Users image' />
 </div>
 @stop

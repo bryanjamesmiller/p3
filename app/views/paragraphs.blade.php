@@ -24,5 +24,16 @@ Generate Paragraphs
         <input type='submit' value='Generate Text' id="generateTextButton"><br>
     </form>
     <div class="middle"><p>Here are your paragraphs:</p></div>
+    <?php
+    $faker = Faker\Factory::create();
+
+    // generate data by accessing properties
+    echo $faker->name;
+    // 'Lucy Cechtelar';
+    echo $faker->address;
+    // "426 Jordy Lodge
+    // Cartwrightshire, SC 88120-6700"
+    echo $faker->text;
+?>
 </div>
 @stop
