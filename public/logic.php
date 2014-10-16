@@ -18,43 +18,26 @@ $_POST = array(
 
 $paragraphs='';
 
+$randomGenerator = Faker\Factory::create();
+
+// generate data by accessing properties
+echo $randomGenerator->name;
+// 'Lucy Cechtelar';
+echo $randomGenerator->address;
+// "426 Jordy Lodge
+// Cartwrightshire, SC 88120-6700"
+echo $randomGenerator->text;
+
 if($_POST['numberOfParagraphs']<=$maxSize && $_POST['numberOfParagraphs']>$minSize)
 {
-    for($i=0; $i<$_POST['numberOfParagraphs']; $i++)
+    for($i = 0; $i < $_POST['numberOfParagraphs']; $i++)
     {
-        $arrayIndex=array_rand($password_word_options);
-        $password.=$password_word_options[$arrayIndex];
-        if($i != $_POST['numberOfWords']-1)
-        {
-            if($_POST['separatorOptions']=='spaces')
-            {
-                $password.=' ';
-            }
-            if($_POST['separatorOptions']=='hyphens')
-            {
-                $password.='-';
-            }
-            if($_POST['separatorOptions']=='underscores')
-            {
-                $password.='_';
-            }
-        }
+                $paragraphs .= $randomGenerator->text;
     }
-    if($_POST["symbol"]=='true')
-    {
-        $arrayIndex=array_rand($password_symbol_options);
-        $password.=$password_symbol_options[$arrayIndex];
-    }
-    if($_POST["number"]=='true')
-    {
-        $arrayIndex=array_rand($password_number_options);
-        $password.=$password_number_options[$arrayIndex];
-    }
-
 }
 else
 {
-    $password= "Please enter a # of words from 1 to 9 above";
+    $password= "Please enter a # of paragraphs from 1 to 99 above";
 }
 
 if($_POST['birthday']=='allLowercase')

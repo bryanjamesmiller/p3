@@ -16,6 +16,11 @@ Route::get('/', function()
 	return View::make('index');
 });
 
+Route::post('/', function()
+{
+    return View::make('index');
+});
+
 // Display the form for generating users
 Route::get('/users', function() {
 

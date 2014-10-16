@@ -45,18 +45,15 @@ img{
     color: lightblue;
 }
 
-.outputs{
-    font-size: .7em;
-    font-family: 'Varela Round', sans-serif;
-    text-align: center;
-    margin: 1.2em;
-    color:white;
-    background-color:black;
-}
-
 #top{
     background-color:black;
-    padding:1em;
+    padding:.5em;
+}
+
+.output{
+    background-color:black;
+    padding:.3em;
+    font-size:.7em;
 }
 
 .middle{
