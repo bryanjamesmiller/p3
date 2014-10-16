@@ -9,43 +9,44 @@ foreach($_POST as $key => $value) {
     $key='';
 }
 
-$_POST = array(
-  "numberOfParagraphs" => 0,
-    "users" => 0,
-    "birthday" => 0,
-    "profile" => 0,
-);
-
 $paragraphs='';
+$users='';
 
 $randomGenerator = Faker\Factory::create();
 
-// generate data by accessing properties
-echo $randomGenerator->name;
-// 'Lucy Cechtelar';
-echo $randomGenerator->address;
-// "426 Jordy Lodge
-// Cartwrightshire, SC 88120-6700"
-echo $randomGenerator->text;
-
-if($_POST['numberOfParagraphs']<=$maxSize && $_POST['numberOfParagraphs']>$minSize)
+if($_POST['numberOfParagraphs'] <= $maxSize && $_POST['numberOfParagraphs'] > $minSize)
 {
+    $paragraphs .= "<p class='middle'>Here are your paragraphs:</p>";
     for($i = 0; $i < $_POST['numberOfParagraphs']; $i++)
     {
-                $paragraphs .= $randomGenerator->text;
+        $paragraphs .= "<p class='output'>" . $randomGenerator->text . "</p>";
     }
 }
 else
 {
-    $password= "Please enter a # of paragraphs from 1 to 99 above";
+    $paragraphs = "<p>Enter a # of paragraphs from 1 to 99 above<p>";
 }
 
-if($_POST['birthday']=='allLowercase')
+if($_POST['numberOfUsers'] <= $maxSize && $_POST['numberOfUsers'] > $minSize)
 {
-    $password=strtolower($password);
+    $users .= "<p class='middle'>Here are your Users:</p>";
+    for($i = 0; $i < $_POST['numberOfUsers']; $i++)
+    {
+        $users .= "<p class='output'>" . $randomGenerator->name . "<br>";
+        if($_POST['email'] == 'true')
+        {
+           $users .= $randomGenerator->email . "<br>";
+        }
+        if($_POST['address'] == 'true')
+        {
+            $users .= $randomGenerator->address;
+        }
+        $users .= "</p>";
+    }
 }
-if($_POST['profile']=='allUppercase')
+else
 {
-    $password=strtoupper($password);
+    $users = "<p>Please only enter a # of Users from 1 to 99 above<p>";
 }
+
 ?>
