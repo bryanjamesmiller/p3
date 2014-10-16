@@ -24,7 +24,7 @@
             Click "Generate Text" and you will receive your text.
         </li>
     </ol>
-    <form>// method='POST' action='index.php'>
+    <form method='POST' action='index.blade.php'>
         <p class="inputHeaders"> How many paragraphs would you like? (Maximum: 99)</p>
         <input type="text" name="numberOfParagraphs"><br>
         <input type='submit' value='Generate Text' id="generateTextButton"><br>
@@ -42,7 +42,7 @@
             Click "Generate Users" and you will receive your list.
         </li>
     </ol>
-    <form>// method='POST' action='index.php'>
+    <form method='POST' action='index.php'>
         <p class="inputHeaders"> How many paragraphs would you like? (Maximum: 99)</p>
         <input type="text" name="numberOfUsers"><br>
         <input type="checkbox" name="birthday" value="true" id="birthday"><label for="birthday">Would you like to include a birthday?</label><br>

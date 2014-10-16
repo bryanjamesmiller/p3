@@ -9,6 +9,13 @@ foreach($_POST as $key => $value) {
     $key='';
 }
 
+$_POST = array(
+  "numberOfParagraphs" => 0,
+    "users" => 0,
+    "birthday" => 0,
+    "profile" => 0,
+);
+
 $paragraphs='';
 
 if($_POST['numberOfParagraphs']<=$maxSize && $_POST['numberOfParagraphs']>$minSize)
@@ -50,11 +57,11 @@ else
     $password= "Please enter a # of words from 1 to 9 above";
 }
 
-if($_POST['capOptions']=='allLowercase')
+if($_POST['birthday']=='allLowercase')
 {
     $password=strtolower($password);
 }
-if($_POST['capOptions']=='allUppercase')
+if($_POST['profile']=='allUppercase')
 {
     $password=strtoupper($password);
 }
