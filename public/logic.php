@@ -38,13 +38,19 @@ if(isset($_POST['numberOfUsers']))
         for($i = 0; $i < $_POST['numberOfUsers']; $i++)
         {
             $users .= "<p class='output'>" . $randomGenerator->name . "<br>";
-            if($_POST['email'] == 'true')
+            if(isset($_POST['email']))
             {
-                $users .= $randomGenerator->email . "<br>";
+                if($_POST['email'] == 'true')
+                {
+                    $users .= $randomGenerator->email . "<br>";
+                }
             }
-            if($_POST['address'] == 'true')
+            if(isset($_POST['address']))
             {
-                $users .= $randomGenerator->address;
+                if($_POST['address'] == 'true')
+                {
+                    $users .= $randomGenerator->address;
+                }
             }
             $users .= "</p>";
         }

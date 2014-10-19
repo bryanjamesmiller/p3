@@ -7,6 +7,14 @@ Problem Set 3 for CSCI E-15
 http://p3.bryanmiller.me/
 
 ###Description of the project:  
+The two main .php files used for my project are found in:
+p3/public/logic.php
+p3/app/views/index.php
+
+I am trying to work on a few other files as well that are blade.php files, but for the purposes 
+of this assignment only the two files above (as well as the css file and the routes.php file) 
+are the focus.
+
 This is a latin paragraph and User generator to help developers have something to work with
 as they are creating web pages and just want to have some basic structure and info to act
 as placeholders.
