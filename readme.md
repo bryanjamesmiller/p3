@@ -19,8 +19,10 @@ This is a latin paragraph and User generator to help developers have something t
 as they are creating web pages and just want to have some basic structure and info to act
 as placeholders.
 
+My CSS3 and HTML5 code validated as such.
+
 ###Demo information:  
-Link to my Jing screencast:  
+Link to my Jing screencast:  http://screencast.com/t/mONznY5I
 
 ###A list of any plugins, libraries, packages or outside code used in the project:  
 I used some Google Fonts, as well as an image that can be found at the below link.  This
