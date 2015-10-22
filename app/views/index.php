@@ -16,9 +16,9 @@
 <div class="sideColumns">
     <form method='POST' action='index.php'>
         <p class="middle"> How many paragraphs would you like to generate? (Maximum: 99)</p>
-        <input type="text" value="Enter # of paragraphs here" name="numberOfParagraphs"><br>
+        <input type="text" placeholder="Enter # of paragraphs here" name="numberOfParagraphs"><br>
         <p class="middle"> How many users would you like to generate? (Maximum: 99)</p>
-        <input type="text" value="Enter # of Users here" name="numberOfUsers"><br>
+        <input type="text" placeholder="Enter # of Users here" name="numberOfUsers"><br>
         <input type="checkbox" name="email" value="true" id="email"><label for="email">Would you like to include an email for your User?</label><br>
         <input type="checkbox" name="address" value="true" id="address"><label for="address">Would you like to include an address for your User?</label><br>
         <input type='submit' value='Generate!' id="generateTextButton"><br>
