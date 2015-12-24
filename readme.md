@@ -4,7 +4,7 @@ p3
 Problem Set 3 for CSCI E-15
 
 ###Live URL of my P3:
-http://p3.bryanmiller.me/
+http://p3.grat.xyz/
 
 ###Description of the project:  
 The two main .php files used for my project are found in:
